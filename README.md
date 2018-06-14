@@ -6,6 +6,12 @@ In a production setting, when working with the `abcart-react` sdk, you will need
 
 #### Quick Start
 
+```
+git clone https://github.com/abcloudio/abcart-react-example.git
+cd abcart-react-example
+npm install
+```
+
 Before using this application you will need to add a test product and test subscription to your Stripe test account.
 
 Add a "shippable" product with the sku: `sku_abc`, any price is fine.
@@ -16,9 +22,10 @@ Add a subscription with the plan id of `plan_D2JfpA9LIpvO18`.
 2.  Connect your own Stripe account, following the instructions within your dashboard at abcart.io/dashboard.
 3.  Copy your api keys from your dashboard to a `.env` file in this application's root. See the example below.
 4.  Create a token by running the `create-token.js` script in the root of this application: `node create-token.js`. Copy the created token into your `.env` file. Depending on what you would like to test, you can copy either the `ANONYMOUS USER` token or the `LOGGED IN USER` token.
-5.  Run the application with `npm run start`.
+5.  Run the application with `npm run start`. View the application on `localhost:3000`.
 6.  The application will show a number of buttons to demonstrate functionality and will expose the application state directly in JSON for your inspection.
 
+Example `.env` file
 ```
 # abcart application id
 REACT_APP_ABCART_APP_ID=your-app-id
