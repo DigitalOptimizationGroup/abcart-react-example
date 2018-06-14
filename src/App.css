@@ -1,0 +1,21 @@
+.App {
+    text-align: left;
+    padding: 30px 0 0 100px;
+    max-width: 750px;
+}
+
+pre {
+    background-color: #f1eded;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid grey;
+    line-height: 18px;
+}
+
+h3 {
+    margin: 30px 0 10px 0;
+}
+
+button {
+    margin: 10px;
+}
