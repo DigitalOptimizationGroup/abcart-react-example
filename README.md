@@ -16,7 +16,7 @@ Before using this application you will need to add a test product and test subsc
 
 Add a "shippable" product with the sku: `sku_abc`, any price is fine.
 
-Add a subscription with the plan id of `plan_D2JfpA9LIpvO18`.
+Add a subscription to your account and note the plan ID. You will need to add this in your `.env` file. The subscription example also uses Stripe Checkout to collect a card token. If you'd like to demo subscriptions, you will need to add your test Stripe key to your `.env` file as well.
 
 1.  Sign-up for an account at abcart.io. You can create a free account that will only be charged if you make actual production charges.
 2.  Connect your own Stripe account, following the instructions within your dashboard at abcart.io/dashboard.
@@ -42,6 +42,12 @@ ABCART_SECRET=your-secret-key
 # token for a logged in user, in production app this needs to be created for each user
 # and you need to manage the authentication of your users
 REACT_APP_TOKEN=a-token-created-by-running-create-token.js
+
+# Stripe public test key
+REACT_APP_STRIPE_PUBLIC_TEST_KEY=your-stripe-test-key
+
+# Stripe subscription plan ID
+REACT_APP_STRIPE_SUBSCRIPTION_PLAN=subscription-plan-id-from-stripe
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
