@@ -1,0 +1,23 @@
+{
+    "name": "abcart-react-example",
+    "version": "0.1.0",
+    "author": "Digital Optimization Group LLC",
+    "license": "MIT",
+    "dependencies": {
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "abcart": "1.0.0-alpha.1",
+        "abcart-react": "1.0.0-alpha.1"
+    },
+    "devDependencies": {
+        "react-scripts": "1.1.4",
+        "jsonwebtoken": "8.3.0",
+        "dotenv": "^6.0.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    }
+}
