@@ -26,6 +26,7 @@ Add a subscription with the plan id of `plan_D2JfpA9LIpvO18`.
 6.  The application will show a number of buttons to demonstrate functionality and will expose the application state directly in JSON for your inspection.
 
 Example `.env` file
+
 ```
 # abcart application id
 REACT_APP_ABCART_APP_ID=your-app-id

@@ -39,13 +39,13 @@ class App extends Component {
                         To use this application you must first create an account
                         at <a href="https://www.abcart.io">abcart.io</a>. This
                         application requires your apikeys. It also requires you
-                        to connect a Stripe account to abcart. All orders will
-                        be created in the TEST versions of your connected Stripe
-                        account.
+                        to connect a Stripe account to abcart. All orders and
+                        subscriptions will be created in the TEST dashboard of
+                        your connected Stripe account.
                         <br />
                         <br />
-                        You can find an example of subscriptions at the bottom
-                        of this page.
+                        You can find an example of subscriptions at the{" "}
+                        <a href="#create-subscription">bottom of this page.</a>
                     </Message>
                     <Items />
                     <ShippingAddress />

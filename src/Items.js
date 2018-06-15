@@ -65,7 +65,7 @@ export default () => (
         <h3>Cart Items</h3>
         <Message>
             The following examples show state changes as you add, update, and
-            remove items from an account. To succesfully add an item to your
+            remove items from an account. To successfully add an item to your
             cart, you must first create it as a Product with an SKU in your
             Stripe account under TEST mode. If you only add the first product
             "sku_abc", to your Stripe account, then you can also see an error
