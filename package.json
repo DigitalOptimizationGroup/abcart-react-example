@@ -5,9 +5,7 @@
     "license": "MIT",
     "dependencies": {
         "react": "^16.3.2",
-        "react-dom": "^16.3.2"
-    },
-    "dependencies": {
+        "react-dom": "^16.3.2",
         "abcart": "1.0.0-alpha.1",
         "abcart-react": "1.0.0-alpha.1"
     },

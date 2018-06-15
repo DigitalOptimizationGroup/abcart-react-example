@@ -1,6 +1,6 @@
 ### abcart react example
 
-This is a developer focused example application utilizing `abcart-react` and the abcart.io service with Stripe integration. It requires an account at abcart.io.
+This is a developer focused example application utilizing `abcart-react` and the abcart.io service with Stripe integration. It requires an account at [https://www.abcart.io](abcart.io).
 
 In a production setting, when working with the `abcart-react` sdk, you will need to create a JSON web token for each of your users. This token will need to be created in a secure environment. For this example app, that is working in Stripe test mode, you can use the `create-token.js` script, as detailed below.
 
@@ -18,7 +18,7 @@ Add a "shippable" product with the sku: `sku_abc`, any price is fine.
 
 Add a subscription to your account and note the plan ID. You will need to add this in your `.env` file. The subscription example also uses Stripe Checkout to collect a card token. If you'd like to demo subscriptions, you will need to add your test Stripe key to your `.env` file as well.
 
-1.  Sign-up for an account at abcart.io. You can create a free account that will only be charged if you make actual production charges.
+1.  Sign-up for an account at [https://www.abcart.io](abcart.io). You can create a free account that will only be charged if you make actual production charges.
 2.  Connect your own Stripe account, following the instructions within your dashboard at abcart.io/dashboard.
 3.  Copy your api keys from your dashboard to a `.env` file in this application's root. See the example below.
 4.  Create a token by running the `create-token.js` script in the root of this application: `node create-token.js`. Copy the created token into your `.env` file. Depending on what you would like to test, you can copy either the `ANONYMOUS USER` token or the `LOGGED IN USER` token.
