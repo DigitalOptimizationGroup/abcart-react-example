@@ -6,8 +6,9 @@
     "dependencies": {
         "react": "^16.3.2",
         "react-dom": "^16.3.2",
-        "abcart": "1.0.0-alpha.2",
-        "abcart-react": "1.0.0-alpha.2"
+        "prop-types": "15.6.1",
+        "abcart": "1.0.0-alpha.3",
+        "abcart-react": "1.0.0-alpha.3"
     },
     "devDependencies": {
         "react-scripts": "1.1.4",
