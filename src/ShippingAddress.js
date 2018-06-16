@@ -102,31 +102,48 @@ export default compose(connectShippingAddress)(
                 </button>
                 <Message>
                     With the following buttons you select either the first or
-                    second address.
+                    second address (you have to add them first, above).
                 </Message>
-                <button onClick={() => selectAddress(addresses[0].id)}>
+                <button
+                    disabled={!addresses[0]}
+                    onClick={() =>
+                        addresses[0] && selectAddress(addresses[0].id)
+                    }
+                >
                     Select 1st Address
                 </button>
-                <button onClick={() => selectAddress(addresses[1].id)}>
+                <button
+                    disabled={!addresses[1]}
+                    onClick={() =>
+                        addresses[1] && selectAddress(addresses[1].id)
+                    }
+                >
                     Select 2nd Address
                 </button>
                 <Message>
-                    With the following buttons you update either the first or
-                    second address.
+                    With the following buttons you can update the first address
+                    (you have to add it first, above).
                 </Message>
                 <button
-                    onClick={() =>
-                        updateShippingAddress(addresses[1].id, address2)
-                    }
+                    disabled={!addresses[0]}
+                    onClick={() => {
+                        addresses[0] &&
+                            updateShippingAddress(addresses[0].id, address2);
+                    }}
                 >
-                    Update 2nd Address1
+                    Update 1st Address1
                 </button>
                 <button
-                    onClick={() =>
-                        updateShippingAddress(addresses[1].id, address2Updated)
-                    }
+                    disabled={!addresses[0]}
+                    onClick={() => {
+                        addresses[0] &&
+                            updateShippingAddress(
+                                addresses[0].id,
+                                address2Updated
+                            );
+                    }}
                 >
-                    Update 2nd Address2
+                    Update 1st Address2
                 </button>
                 <Message>
                     This button will calculate the shipping / tax for a given
@@ -140,12 +157,14 @@ export default compose(connectShippingAddress)(
                     integrations.
                 </Message>
                 <button
-                    onClick={() =>
+                    onClick={() => {
                         calculateShippingMethods({
-                            id: addresses[1].id,
-                            address: addresses[1]
-                        })
-                    }
+                            id: selectedAddressId,
+                            address: addresses.find(
+                                address => address.id === selectedAddressId
+                            )
+                        });
+                    }}
                 >
                     Calculate Shipping Methods (must have items in cart)
                 </button>

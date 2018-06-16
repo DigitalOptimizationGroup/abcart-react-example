@@ -1,14 +1,13 @@
 {
     "name": "abcart-react-example",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "author": "Digital Optimization Group LLC",
     "license": "MIT",
     "dependencies": {
         "react": "^16.3.2",
         "react-dom": "^16.3.2",
         "prop-types": "15.6.1",
-        "abcart": "1.0.0-alpha.3",
-        "abcart-react": "1.0.0-alpha.3"
+        "abcart-react": "1.0.0-alpha.5"
     },
     "devDependencies": {
         "react-scripts": "1.1.4",

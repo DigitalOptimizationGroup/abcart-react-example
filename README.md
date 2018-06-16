@@ -6,6 +6,8 @@ In a production setting, when working with the `abcart-react` sdk, you will need
 
 #### Quick Start
 
+In your dashboard of abcart.io, you can follow the Quick Start and automatically generate test products and the needed `.env` file. Or you can follow along, below, manually.
+
 ```
 git clone https://github.com/abcloudio/abcart-react-example.git
 cd abcart-react-example
@@ -45,6 +47,9 @@ REACT_APP_TOKEN=a-token-created-by-running-create-token.js
 
 # Stripe public test key
 REACT_APP_STRIPE_PUBLIC_TEST_KEY=your-stripe-test-key
+
+# Stripe demo product sku
+REACT_APP_STRIPE_DEMO_SKU=product-sku-id-from-stripe
 
 # Stripe subscription plan ID
 REACT_APP_STRIPE_SUBSCRIPTION_PLAN=subscription-plan-id-from-stripe
