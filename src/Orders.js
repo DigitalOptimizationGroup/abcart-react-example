@@ -11,7 +11,8 @@ export default compose(connectOrders, connectPlaceOrder)(
                 in test mode. In production you would get this with something
                 like Stripe Elements. In order to place an order you must first
                 click the "calculateShippingMethods" button, from above, to
-                create a pending order in Stripe.
+                create a pending order in Stripe. Note the change of status in
+                the order after you click "Place Order".
             </Message>
             <button
                 onClick={() =>

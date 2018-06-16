@@ -11,9 +11,9 @@ import {
 
 const productCatalog = [
     {
-        sku: "sku_abc",
+        sku: process.env.REACT_APP_STRIPE_DEMO_SKU,
         metadata: {
-            name: "Awesome Product"
+            name: "abcart-react-example demo sku"
         }
     },
     // not in stripe
@@ -67,10 +67,12 @@ export default () => (
             The following examples show state changes as you add, update, and
             remove items from an account. To successfully add an item to your
             cart, you must first create it as a Product with an SKU in your
-            Stripe account under TEST mode. If you only add the first product
-            "sku_abc", to your Stripe account, then you can also see an error
-            response when trying to add "abc-item2" into the cart. Note the
-            "pending" state changes as we wait for a response from the server.
+            Stripe account under TEST mode (or the quick start in your
+            abcart.io/dashboard). If you only add the first product{" "}
+            {process.env.REACT_APP_STRIPE_DEMO_SKU}, to your Stripe account,
+            then you can also see an error response when trying to add
+            "abc-item2" into the cart. Note the "pending" state changes as we
+            wait for a response from the server.
         </Message>
         {productCatalog.map(item => (
             <div key={item.sku}>

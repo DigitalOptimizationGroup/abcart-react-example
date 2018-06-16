@@ -32,8 +32,8 @@ class SubscriptionExample extends React.Component {
             name: "abcart-react-example",
             description: "Test subscription with abcart.",
             zipCode: true,
-            amount: 9995,
-            email: "example_user_001@example.com",
+            amount: 4995,
+            email: "abcart-react-example@abcart.io",
             panelLabel: "Subscribe",
             allowRememberMe: false,
             zipCode: true
